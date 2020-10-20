@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Real-time Chat Application using Socket.io, React.js, Node.js & Express.js
+This Chat app allows users to create room and do real-time communication and send emojis 
+It is build using web sockets that Socket.io uses internally. This app is only a demonstration and not a real product.
+The project structure is distributed into sections - 
+* client 
+* server
+THe app is live here - [https://5f8db8ab81543495e98f17cd--gallant-archimedes-a7086a.netlify.app](Join-the Chat app)
+<img src="./home-page.png" alt="the screenshot of the app large screen"/>
+<img src="./chat-page.png" alt="the screenshot of the app large screen"/>
+<img src="./home-page-mobile.png" alt="the screenshot of the app large screen"/>
+<img src="./chat-page-mobile.png" alt="the screenshot of the app large screen"/>
 
-## Available Scripts
+# The packages included in this app are - 
+* Server - It has all the backend packages like  Node.js, Express.js, Socket.io, CORS middleware, and Nodemon server deployment
+* Client - It has all the frontend packages like React, React-router, react-emoji, query-string, and Socket.io Client 
 
-In the project directory, you can run:
+# Setting up the server-side
+Most of the server-side setup is done requiring http module and then encapsulating it inside the socket.io. Using express makes setting up easier and allows us to use different middleware like the CORS middleware which has been used here.
+All the handling of the users adding, removing, admin work,... everything is done on the server side. Also used nodemon module to automaate the serving.
 
-### `npm start`
+# Setting up the client-side 
+Firstly, the design is completely mine asthetics is an important part that I always try to maintain in all my projects.
+The home page design was build using a tool called blush which allows to make vector illustrations based on humaaans vector graphics.
+The responsive design changes when opened in a mobile-device.
+Secondly, for React structure two main components were created Join.js(Homepage) and Chat.js all the other components are created on top of these.
+React-router is used for routing and apart from that for smooth scrolling react-scroll-to-bottom and react-emojis for more user interaction just like any other Chat-app.
+Query-strings are used to parse the location i.e. Name & Room. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Both the client and the server is connected using socket.io, the socket.io-client at the clkient side and socket.io in the server side enables the user to send constant events. There is constant emmiting and listening of events between the client and the server.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Deployment
+The server is deployed using Heroku CLI
+The client is deployed using Netlify
 
-### `npm test`
+# Features
+* It shows the current users who are in the same room, 
+* Send notifications when any user joins or left,
+* This chat app allows the entry of unique users for a single room For ex- if Joe is in room gamers he cannot join with hte same name.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Future Scope
+* This app is currently session based and does not at any circumstances preserves or monitors the Chat done in any room. 
+* Will be connected to a database either FIrebase or MongoDB to save chats so that users can take a look at it.
+* A column will be added to show all the users.
+* The ability to add images, videos and docs.
+* To add a variety of emojis more easily
