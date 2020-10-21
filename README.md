@@ -37,7 +37,7 @@ The client is deployed using Netlify
 # Features
 * It shows the current users who are in the same room, 
 * Send notifications when any user joins or left,
-* This chat app allows the entry of unique users for a single room For ex- if Joe is in room gamers he cannot join with hte same name.
+* This chat app allows the entry of unique users for a single room For ex- if Joe is in room gamers he cannot join with the same name.
 
 # Future Scope
 * This app is currently session based and does not at any circumstances preserves or monitors the Chat done in any room. 
