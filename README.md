@@ -1,9 +1,7 @@
 # Real-time Chat Application using Socket.io, React.js, Node.js & Express.js
 This Chat app allows users to create room and do real-time communication and send emojis 
 It is build using web sockets that Socket.io uses internally. This app is only a demonstration and not a real product.
-The project structure is distributed into sections - 
-* client 
-* server
+
 # The app is live here - 
 [Click here to see the live demo](https://5f8db8ab81543495e98f17cd--gallant-archimedes-a7086a.netlify.app)
 
@@ -11,7 +9,9 @@ The project structure is distributed into sections -
 <img src="./chat-page.png" alt="the screenshot of the app large screen"/>
 <img src="./home-page-mobile.png" alt="the screenshot of the app large screen"/> <img src="./chat-page-mobile.png" alt="the screenshot of the app large screen"/>
 
-
+# The project structure is distributed into sections - 
+* client 
+* server
 # The packages included in this app are - 
 * Server - It has all the backend packages like  Node.js, Express.js, Socket.io, CORS middleware, and Nodemon server deployment
 * Client - It has all the frontend packages like React, React-router, react-emoji, query-string, and Socket.io Client 
