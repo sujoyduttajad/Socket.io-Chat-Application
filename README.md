@@ -21,7 +21,7 @@ Most of the server-side setup is done requiring http module and then encapsulati
 All the handling of the users adding, removing, admin work,... everything is done on the server side. Also used nodemon module to automaate the serving.
 
 # Setting up the client-side 
-Firstly, the design is completely mine asthetics is an important part that I always try to maintain in all my projects.
+Firstly, the design is completely mine, asthetics is an important part that I always try to maintain in all of my projects.
 The home page design was build using a tool called blush which allows to make vector illustrations based on humaaans vector graphics.
 The responsive design changes when opened in a mobile-device.
 Secondly, for React structure two main components were created Join.js(Homepage) and Chat.js all the other components are created on top of these.
