@@ -5,7 +5,7 @@ The project structure is distributed into sections -
 * client 
 * server
 # The app is live here - 
-[Click here to see the live demo] (https://5f8db8ab81543495e98f17cd--gallant-archimedes-a7086a.netlify.app)
+[Click here to see the live demo](https://5f8db8ab81543495e98f17cd--gallant-archimedes-a7086a.netlify.app)
 
 <img src="./home-page.png" alt="the screenshot of the app large screen"/>
 <img src="./chat-page.png" alt="the screenshot of the app large screen"/>
